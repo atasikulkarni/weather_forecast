@@ -1,5 +1,6 @@
 import "./weather.css";
-export function AboutWeather()
+import {AboutWeather} from "./about";
+export function Weather()
 {
   return(
     <div>
@@ -20,12 +21,11 @@ export function AboutWeather()
         <div className="right">
           <h3>5 Days Weather Forecast</h3>
         </div>
-        <div className="right">
-          <h3>About Weather</h3>
-        </div>
-      </div>
-      <div>
         
+      </div>
+      <button className="button-submit" onClick={AboutWeather()}>About Us</button>
+      <div>
+
       </div>
     </div>
   )
